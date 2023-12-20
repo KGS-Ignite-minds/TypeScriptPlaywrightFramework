@@ -55,5 +55,12 @@ export default class LoginPage {
         await common.validateElementVisible(TestLocators.Login.BackEndMessage,"BackEndMessage")
     }
 
+    async launchApplicationUrl() {
+        let common = new CommonPage(this.page);
+        await common.launchApplicationUrl()
+        
+
+    }
+
 
 }
