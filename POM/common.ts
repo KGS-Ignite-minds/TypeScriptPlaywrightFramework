@@ -257,5 +257,33 @@ export default class util {
         }
     }
 
+    async launchApplicationUrl() {
+        try {
+            let url = ""
+            if (TestData.CommonData.ENV == "LOCAL") {
+                url = TestData.CommonData.URL.LOCAL
+            } else if (TestData.CommonData.ENV == "DEV") {
+                url = TestData.CommonData.URL.DEV
+            } else if (TestData.CommonData.ENV == "TEST") {
+                url = TestData.CommonData.URL.TEST
+            }
+            console.log(url)
+            await this.page?.goto(url, { timeout: 60000 });
+            await this.page?.waitForTimeout(1000)
+        } catch (error) {
+            throw new Error(`Launch Application failed with an error: ${error});`);
+        }
+    }
+
+    async selectDropdownByValue(dropdownSelector: string, value: string) {
+
+        try {
+            await this.page.locator(dropdownSelector).selectOption(value)
+
+        } catch (error) {
+            throw new Error(`Selecting the dropdown value ` + value + ` failed with an error: ${error});`);
+        }
+    }
+
 
 }

@@ -14,6 +14,11 @@
         "SkipSetUp": "//*[text() = 'Skip setup']",
         "Yes": "//input[@type='submit']",
         "NewQuestion": "//*[text() = 'New Question']",
-        "BackEndMessage": "//*[contains(text(), 'service up and running')]"
-    }  
+        "BackEndMessage": "//*[contains(text(), 'Welcome to the-internet')]"
+    }  ,
+
+    "HomePage":{
+        "dropdown": "//a[text()='Dropdown']",
+        "dropdownObject":"//select[@id='dropdown']"
+    }
 }

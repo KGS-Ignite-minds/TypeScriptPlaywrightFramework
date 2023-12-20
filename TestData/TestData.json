@@ -3,7 +3,8 @@
         "ENV": "DEV",
         "URL": {
             "LOCAL": "http://localhost:3000/",
-            "DEV": "https://bidgpt-dev.kpmg-aip-nonprod.co.uk/dashboard",
+            "DEV1": "https://bidgpt-dev.kpmg-aip-nonprod.co.uk/dashboard",
+            "DEV": "https://the-internet.herokuapp.com/",
             "TEST": "https://bidgpt-uat.kpmg-aip.co.uk/"
         },
         "HEADLESS": false,
