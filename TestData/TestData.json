@@ -2,10 +2,10 @@
     "CommonData":{
         "ENV": "DEV",
         "URL": {
-            "LOCAL": "http://localhost:3000/",
-            "DEV1": "https://bidgpt-dev.kpmg-aip-nonprod.co.uk/dashboard",
+            "LOCAL": "https://the-internet.herokuapp.com/",
+            "DEV1": "https://the-internet.herokuapp.com/",
             "DEV": "https://the-internet.herokuapp.com/",
-            "TEST": "https://bidgpt-uat.kpmg-aip.co.uk/"
+            "TEST": "https://the-internet.herokuapp.com/"
         },
         "HEADLESS": false,
         "DEFAULT_TIMEOUT": 100000
