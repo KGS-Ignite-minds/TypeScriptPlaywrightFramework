@@ -1,6 +1,5 @@
 import { expect, selectors, type Locator, type Page } from '@playwright/test';
 import * as TestData from '../TestData/TestData.json'
-import * as TestLocators from '../POM/TestLocators.json'
 
 export default class util {
     readonly page: Page;
@@ -21,7 +20,7 @@ export default class util {
             }
             console.log(url)
             await this.page?.goto(url, { timeout: 60000 });
-            this.waitForElement(TestLocators.Login.KPMGTermsOfService)
+            
             await this.page?.waitForTimeout(1000)
         } catch (error) {
             throw new Error(`Launch Application failed with an error: ${error});`);
@@ -34,7 +33,7 @@ export default class util {
             console.log(url)
             await this.page?.goto(url, { timeout: 60000 });
 
-            this.waitForElement(TestLocators.Login.BackEndMessage)
+            
             await this.page?.waitForTimeout(1000)
         } catch (error) {
             throw new Error(`Launch Application failed with an error: ${error});`);

@@ -1,7 +1,7 @@
 import { Given, When, Then } from "@cucumber/cucumber"
 import { page } from '../../hooks/hooks'
-import LoginPage from '../../POM/loginPage'
-import Common from '../../POM/common'
+import LoginPage from '../../pages/loginPage'
+import Common from '../../pages/common'
 
 Given('I Navigate to the AUT', async () => {
      const login = new LoginPage(page);

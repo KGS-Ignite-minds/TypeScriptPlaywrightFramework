@@ -1,6 +1,6 @@
 import { expect, type Locator, type Page } from '@playwright/test';
 import { page } from '../hooks/hooks'
-import CommonPage from '../POM/common'
+import CommonPage from './common'
 import * as TestData from '../TestData/TestData.json'
 
 export default class LoginPage {
